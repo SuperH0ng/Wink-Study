@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>superhong</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background: linear-gradient(to bottom, white 6.5%, darkgrey);
+        }
+        header{
+            display: flex;
+            height: 200px;
+            align-items: center;
+            background-color: white;
+            margin-left: 0;
+            margin-bottom: 10px;
+        }
+        #hddiv{
+            width: 200px;
+            margin-left: 100px;
+        }
+        header nav{
+            display: flex;
+            margin-left: auto;
+            margin-right: 100px;
+            padding-top: 100px;
+            height: 0;
+        }
+        .dropdown {
+            position: relative;
+            display: inline-block;
+            width: 200px;
+        }
+        .dropdown_botton{
+            font-size: 15px;
+            color: black;
+            background-color: white;
+            border: none;
+            padding: 16px 0;
+            width: 200px;
+            font-weight: bolder;
+        }
+        .dropdown-content{
+            display: none;
+            background-color: darkgrey;
+            width: 200px;
+            margin: 0 auto;
+        }
+        .dropdown-content a {
+            color: white;
+            font-size: 12px;
+            padding: 12px;
+            text-decoration: none;
+            display: block;
+            font-weight: bold;
+        }
+        .dropdown-content a:hover {background-color: black;}
+        .dropdown:hover .dropdown-content {display: block;}
+        .dropdown:hover .dropdown_botton {background-color: lightgray;}
+        #logdiv {
+            border: firebrick;
+            padding-bottom: 100px;
+            margin-right: 100px;
+            color: darkgrey;
+            height: 20px;
+        }
+        footer {
+            background-color: transparent;
+        }
+        #fot1{
+            margin-top: 60px;
+            margin-left: 100px;
+            margin-bottom: 60px;
+        }
+        h1 {
+            font-weight: bold;
+            color: black;
+            font-size: 16px;
+        }
+        .imp {
+            font-weight: bold;
+            color: white;
+            font-size: 16px;
+        }
+        #sec1 {
+            margin-top: 100px;
+            display: flex;
+            align-items: center;
+        }
+        #sec1div1 {
+            margin-left: 200px;
+        }
+        #sec1div2 {
+            margin-left: auto;
+            margin-right: 200px;
+        }
+        .secdivp {
+            padding: 20px;
+            font-size: 20px;
+            font-weight: bold;
+        }
+        #sec2 {
+            margin-top: 100px;
+            display: flex;
+            align-items: center;
+            margin-bottom: 200px;
+        }
+        #sec2div1 {
+            margin-left: 300px;
+        }
+        .slide {
+            margin-top: 100px;
+            margin-left: auto;
+            margin-right: 400px;
+        }
+        ul,li{list-style:none;}
+        .slide{height:500px;overflow:hidden; width: 500px}
+        .slide ul{width:calc(100% * 4);display:flex;animation:slide 8s infinite;} /* slide를 8초동안 진행하며 무한반복 함 */
+        .slide li{width:calc(100% / 4);height:500px;}
+        @keyframes slide {
+            0% {margin-left:0;} /* 0 ~ 10  : 정지 */
+            10% {margin-left:0;} /* 10 ~ 25 : 변이 */
+            25% {margin-left:-100%;} /* 25 ~ 35 : 정지 */
+            35% {margin-left:-100%;} /* 35 ~ 50 : 변이 */
+            50% {margin-left:-200%;}
+            60% {margin-left:-200%;}
+            75% {margin-left:-300%;}
+            85% {margin-left:-300%;}
+            100% {margin-left:0;}
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div id="hddiv" style="font-weight: bold; font-size: 30px">SuperHong</div>
+        <nav>
+            <div class="dropdown">
+                <button class="dropdown_botton">홍승현 소개</button>
+                <div class="dropdown-content">
+                    <a href="#">걸어온 길</a>
+                    <a href="#">취미</a>
+                    <a href="#">가족</a>
+                    <a href="#"></a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropdown_botton">후원 문의</button>
+                <div class="dropdown-content">
+                    <a href="#">국민은행<br>(969802-01-266076)</a>
+                    <a href="#">신한은행<br>(110-516-872038)</a>
+                    <a href="#">IBK기업은행<br>(973-010194-01-011)</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropdown_botton">사진</button>
+                <div class="dropdown-content">
+                    <a href="#">미취학 아동</a>
+                    <a href="#">초등학생</a>
+                    <a href="#">중학생</a>
+                    <a href="#">고등학생</a>
+                    <a href="#">군인</a>
+                    <a href="#">성인</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropdown_botton">고객 센터</button>
+                <div class="dropdown-content">
+                    <a href="#">충성 맹세</a>
+                    <a href="#">기타 후원 문의</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <hr>
+    <section id="sec1">
+        <div id="sec1div1">
+            <img src="../국민대 흑백.png" height="676" width="902"/>
+        </div>
+        <div id="sec1div2">
+            <p class="secdivp">
+                2021.03~
+            </p>
+            <p class="secdivp">
+                국민대학교의 미래, 소프웨어학부
+            </p>
+            <p class="secdivp">
+                소프트웨어융합대학 엘리트 동아리, Wink
+            </p>
+            <p class="secdivp">
+                최고의 학생회, IF
+            </p>
+            <img style="margin-right: 50px; margin-left: 20px" src="../국민대로고 흑백.png" height="100px" width="100px"/>
+            <img style="margin-right: 50px" src="../윙크 흑백.png" height="100px" width="100px"/>
+            <img style="margin-right: 50px" src="../이프 흑백.png" height="100px" width="100px"/>
+        </div>
+    </section>
+    <section id="sec2">
+        <div id="sec2div1">
+            <p style="font-weight: bold; font-size: 30px; margin-bottom: 30px">
+                아 배고프다.
+            </p>
+            <p style="font-weight: bold; font-size: 20px">
+                홍승현은 배고플 때 무슨 음식이 먹고싶을까<span style="color: red; font-size: 50px"> ?</span>
+            </p>
+        </div>
+        <div class="slide">
+            <ul>
+                <li><img src="../치킨 흑백.png" height="500" width="500"/></li>
+                <li><img src="../삼겹흑백.png" height="500" width="500"/></li>
+                <li><img src="../순대국 흑백.png" height="500" width="500"/></li>
+                <li><img src="../타꼬야끼 흑백.png" height="500" width="500"/></li>
+            </ul>
+        </div>
+    </section>
+    <hr>
+    <footer>
+        <div id="fot1">
+            <p style="margin: 20px 0; color: black; font-size: 25px; font-weight: 900">
+                Contact
+            </p>
+            <h1 style="display: inline; margin-right: 20px">
+                대표자 :
+                <span class="imp">
+                    홍승현
+                </span>
+            </h1>
+            <h1 style="display: inline" class="imp">
+                서울특별시 강북구 삼양로 19길 113, 103동 402호
+            </h1>
+            <h1>
+                전화 번호 : <span class="imp">010-3026-1099</span>
+            </h1>
+            <h1>
+                E-mail : <span class="imp">ghdtmdgus100@kookmin.ac.kr</span>
+            </h1>
+            <h1>
+                git : <span class="imp">https://github.com/SuperH0ng</span>
+            </h1>
+
+        </div>
+        <div>
+
+        </div>
+    </footer>
+</body>
+</html>
